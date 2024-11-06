@@ -56,16 +56,46 @@ nav a:hover{
     width: 100%;
 }
 
-.burger_menu {
+.showOnMobile {
     display: none;
 }
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white; /* Adjust background color as needed */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visual separation */
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+
+  .bottom-nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0; /* Adjust padding as desired */
+    margin: 0;
+    list-style: none;
+  }
+  
+  .bottom-nav li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bottom-nav a {
+    color: #000; /* Adjust icon color as needed */
+    text-decoration: none;
+  }
+  
 
 @media(max-width: 800px) {
     .hideOnMobile{
         display: none;
     }
 
-    .burger_menu {
+    .showOnMobile {
         display: block;
     }
 
