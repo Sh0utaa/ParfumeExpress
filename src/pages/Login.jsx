@@ -1,8 +1,14 @@
 import React from 'react'
+import '../static/Authentication.css'
 
 function Login() {
   return (
-    <div>Login</div>
+    <>
+        <div className="authentication">
+
+        </div>
+    
+    </>
   )
 }
 

@@ -1,0 +1,12 @@
+.authentication {
+    border: 1px solid black;
+    width: 60%;
+    height: 80vh;
+    margin: auto;
+}
+
+@media (max-width: 800px) {
+    .authentication {
+        width: 80%;
+    }
+}
