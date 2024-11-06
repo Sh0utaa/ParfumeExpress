@@ -6,6 +6,7 @@ function Home() {
   return (
     <>
       <div className="home-container">
+        
         <div className="image-container">
           <div className="image-wrapper">
             <img src="src/assets/ManModel.png" alt="manModelPicture" />
@@ -45,15 +46,19 @@ function Home() {
                   </div>
 
                   <div className="product">
+                    <h4>SPICEBOMB EXTREME</h4>
+                    <p>50ml</p>
+                    <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8d76003029feec33/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+                    <p>$299.00</p>
+                  </div>
+
+                  <div className="product">
                     <h4>STRONGER WITH YOU</h4>
                     <p>50ml</p>
                     <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8d420031447fa12e/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
                     <p>$299.00</p>
                   </div>
-
-                  
                 </div>
-
               </div>
 
               <div className="recently-added">
@@ -72,6 +77,13 @@ function Home() {
                     <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8d3c001cc561407d/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
                     <p>$299.00</p>
                   </div>
+                  
+                  <div className="product">
+                    <h4>SPICEBOMB EXTREME</h4>
+                    <p>50ml</p>
+                    <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8d76003029feec33/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+                    <p>$299.00</p>
+                  </div>
 
                   <div className="product">
                     <h4>VALENTINO BORN IN ROMA</h4>
@@ -80,13 +92,44 @@ function Home() {
                     <p>$299.00</p>
                   </div>
                 </div>
-
               </div>
+
+
+              <div className="other-products">
+                <div className="product-category">
+                  <div>
+                    <h3>OTHER PRODUCTS</h3>
+                    <p>Check out our Other Products</p>
+                  </div>
+                  <button>See All ></button>
+                </div>
+
+                <div className="products">
+                  <div className="product">
+                    <h4>YSL EDP</h4>
+                    <p>50ml</p>
+                    <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8d3c001cc561407d/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+                    <p>$299.00</p>
+                  </div>
+
+                  <div className="product">
+                    <h4>SPICEBOMB EXTREME</h4>
+                    <p>50ml</p>
+                    <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8d76003029feec33/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+                    <p>$299.00</p>
+                  </div>
+
+                  <div className="product">
+                    <h4>VALENTINO BORN IN ROMA</h4>
+                    <p>50ml</p>
+                    <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8c03001bcc86a98f/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+                    <p>$299.00</p>
+                  </div>
+                </div>
+              </div>
+
+              
             </div>
-
-
-
-            <div className="Advertisemenet">Advertisement 2</div>
           </div>
       </div>
     </>

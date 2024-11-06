@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../static/Navbar.css';
 
 function Navbar() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const showSidebar = () => {
     setIsSidebarVisible(true);
@@ -12,8 +13,27 @@ function Navbar() {
     setIsSidebarVisible(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <>    <nav>
+    <>
+    <div className="container">  
+    
+    <nav>
     {/* Sidebar */}
     <ul className={`nav-sidebar ${isSidebarVisible ? 'visible' : ''}`} id='nav-sidebar'>
       <li>
@@ -44,7 +64,7 @@ function Navbar() {
         </a></li>
     </ul>
 
-    <ul>
+    <ul className={`${isScrolled ? 'scrolled' : ''}`}>
     <li className='showOnMobile'><a href="/">
     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
     </a></li>
@@ -60,8 +80,8 @@ function Navbar() {
 
     {/* PARFUMEEXPRESS LOGO */}
       <li><a href="/">
-      <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-      width="120px" height="120px" viewBox="0 0 300.000000 300.000000"
+      <svg className={`${isScrolled ? 'scrolled' : ''}`} version="1.0" xmlns="http://www.w3.org/2000/svg"
+      width="150px" height="150px" viewBox="0 0 300.000000 300.000000"
       preserveAspectRatio="xMidYMid meet">
       <metadata>
       Created by potrace 1.10, written by Peter Selinger 2001-2011
@@ -172,7 +192,9 @@ function Navbar() {
       
       
     </ul>
-  </nav>
+    </nav>
+
+    </div>
       {/* Bottom Nav for Mobile screen */}
       <div className="bottom-nav showOnMobile">
       <ul>
