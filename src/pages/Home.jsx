@@ -4,7 +4,18 @@ import Navbar from '../components/Navbar'
 function Home() {
   return (
     <>
-      <h1>HOME PAGE!</h1>
+      <div className="container">
+        <div className="image-container">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+
+        <div className="products-container">
+          
+        </div>
+        
+      </div>
     </>
   )
 }
