@@ -24,7 +24,7 @@ function Navbar() {
         </a>
       </li>
 
-      <li><a href="#">
+      <li><a href="/">
         HOME
         </a></li>
       <li><a href="#">
@@ -39,7 +39,7 @@ function Navbar() {
         <li><a href="#">
         CART
         </a></li>
-        <li><a href="#">
+        <li><a href="/login">
         ACCOUNT
         </a></li>
     </ul>
@@ -48,7 +48,7 @@ function Navbar() {
     <li className='showOnMobile'><a href="#">
     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
     </a></li>
-    <li className='hideOnMobile'><a href="#">
+    <li className='hideOnMobile'><a href="/">
         HOME
         </a></li>
       <li className='hideOnMobile'><a href="#">
@@ -157,7 +157,7 @@ function Navbar() {
       <li className='hideOnMobile'><a href="#">
         CART
       </a></li>
-      <li className='hideOnMobile'><a href="#">
+      <li className='hideOnMobile'><a href="/login">
         ACCOUNT
         </a></li>
 
@@ -177,7 +177,7 @@ function Navbar() {
       <div className="bottom-nav showOnMobile">
       <ul>
         <li>
-          <a href="">
+          <a href="/login">
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
           </a>
         </li>
