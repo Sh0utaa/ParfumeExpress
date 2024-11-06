@@ -1,12 +1,92 @@
+/* Container Styling */
 .authentication {
-    border: 1px solid black;
     width: 60%;
     height: 80vh;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
 }
+
+/* Form Styling */
+.authentication form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 20px;
+}
+
+/* Heading Styling */
+.authentication h1 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+    color: #333; /* Adjust as needed */
+}
+
+/* Input Fields Styling */
+.authentication input[type="text"],
+.authentication input[type="email"],
+.authentication input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.authentication input[type="email"]:focus,
+.authentication input[type="password"]:focus {
+    border-color: #555; /* Change to your preferred focus color */
+}
+
+/* Button Styling */
+.authentication button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: #000000; /* Button color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid #000000;
+}
+
+.authentication button:hover {
+    background-color: white; /* Darker shade for hover */
+    color: #000000;
+}
+
+/* Links Styling */
+.authentication a {
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.authentication a:hover {
+    text-decoration: underline;
+}
+
+/* Additional Paragraph Styling */
+.authentication p {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.authentication p a {
+    font-weight: bold;
+}
+
 
 @media (max-width: 800px) {
     .authentication {
-        width: 80%;
+        width: 100%;
     }
 }
