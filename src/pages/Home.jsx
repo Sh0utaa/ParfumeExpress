@@ -22,9 +22,16 @@ function Home() {
           </div>
         </div>
 
+        {/* <div class="ad-container">
+            <div class="ad-slider">
+                <img src="src\assets\Logos\Chanel.png" alt="Ad 1" />
+                <img src="src\assets\Logos\JPG_logo.png" alt="Ad 2" />
+                <img src="src\assets\Logos\valentino-logo.png" alt="Ad 3" />
+            </div>
+        </div> */}
+
 
           <div className="products-container">
-            <div className="Advertisemenet">Advertisement 1</div>
           
             <div className='products-wrapper'>
               <div className="best-selling">
@@ -61,6 +68,9 @@ function Home() {
                 </div>
               </div>
 
+              <div className="Advertisemenet">REKLAMA 1</div>
+
+
               <div className="recently-added">
                 <div className="product-category">
                   <div>
@@ -93,6 +103,10 @@ function Home() {
                   </div>
                 </div>
               </div>
+
+
+            <div className="Advertisemenet">REKLAMA 2</div>
+
 
 
               <div className="other-products">
@@ -128,7 +142,7 @@ function Home() {
                 </div>
               </div>
 
-              
+            <div className="Advertisemenet">REKLAMA 3</div>
             </div>
           </div>
       </div>
