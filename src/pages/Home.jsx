@@ -2,8 +2,11 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import "../static/Home.css"
 import About from '../components/About'
+import { useAuth } from '../utils/AuthContext'
 
 function Home() {
+  const {user} = useAuth()
+
   return (
     <>
       <div className="home-container">
@@ -23,8 +26,8 @@ function Home() {
           </div>
         </div>
 
-        <div class="logos-container">
-            <div class="logo-slider">
+        <div className="logos-container">
+            <div className="logo-slider">
               <img src="src\logos\boss-hugo-boss.svg" alt="" />
               <img src="src\logos\calvin-klein-1.svg" alt="" />
               <img src="src\logos\chanel-1.svg" alt="" />
@@ -36,7 +39,7 @@ function Home() {
               <img src="src\logos\yves-saint-laurent.svg" alt="" />
             </div>
 
-            <div class="logo-slider">
+            <div className="logo-slider">
               <img src="src\logos\boss-hugo-boss.svg" alt="" />
               <img src="src\logos\calvin-klein-1.svg" alt="" />
               <img src="src\logos\chanel-1.svg" alt="" />
