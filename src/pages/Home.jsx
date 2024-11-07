@@ -27,9 +27,9 @@ function Home() {
             <div class="logo-slider">
               <img src="src\logos\boss-hugo-boss.svg" alt="" />
               <img src="src\logos\calvin-klein-1.svg" alt="" />
-              <img src="src\logos\chanel-2.svg" alt="" />
-              <img src="src\logos\dolce-and-gabbana.svg" alt="" />
-              <img src="src\logos\giorgio-armani.svg" alt="" />
+              <img src="src\logos\chanel-1.svg" alt="" />
+              <img src="src\logos\dolce-gabbana-1.svg" alt="" />
+              <img src="src\logos\armani.svg" alt="" />
               <img src="src\logos\gucci.svg" alt="" />
               <img src="src\logos\jean-paul-gaultier.svg" alt="" />
               <img src="src\logos\versace.svg" alt="" />
@@ -39,9 +39,9 @@ function Home() {
             <div class="logo-slider">
               <img src="src\logos\boss-hugo-boss.svg" alt="" />
               <img src="src\logos\calvin-klein-1.svg" alt="" />
-              <img src="src\logos\chanel-2.svg" alt="" />
-              <img src="src\logos\dolce-and-gabbana.svg" alt="" />
-              <img src="src\logos\giorgio-armani.svg" alt="" />
+              <img src="src\logos\chanel-1.svg" alt="" />
+              <img src="src\logos\dolce-gabbana-1.svg" alt="" />
+              <img src="src\logos\armani.svg" alt="" />
               <img src="src\logos\gucci.svg" alt="" />
               <img src="src\logos\jean-paul-gaultier.svg" alt="" />
               <img src="src\logos\versace.svg" alt="" />

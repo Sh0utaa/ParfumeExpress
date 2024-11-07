@@ -1,8 +1,11 @@
 import React from 'react'
+import '../static/About.css'
 
 function About() {
   return (
-    <div>About</div>
+    <div className='about-container'>
+        About Us
+    </div>
   )
 }
 
