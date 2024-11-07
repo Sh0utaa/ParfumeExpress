@@ -36,7 +36,7 @@
 }
 
 .products-container {
-    height: 1500px;
+    height: 1800px;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -120,40 +120,44 @@
 
 .Advertisemenet {
     width: 100%;
-    height: 50px;
+    height: 150px;
     border: 1px black solid;
 }
 
 
 /* Container for the sliding ad bar */
-.ad-container {
-    margin-top: 50px;
+.logos-container {
+    width: 100%;
     overflow: hidden;
+    padding: 50px 0;
     white-space: nowrap;
-    width: 99.9%;
 }
 
 /* The inner slider that will animate */
-.ad-slider {
-    display: inline-flex;
-    animation: slide 150s linear infinite; /* Adjust speed and timing */
-    animation-delay: -60s; /* Start halfway through the animation */
+.logo-slider {
+    display: inline-block;
+    animation: 20s slider infinite linear;
 }
 
 /* Style individual images */
-.ad-slider img {
-    width: 200px; /* Adjust width as needed */
-    height: auto; /* Keeps images proportionate */
-    margin-right: 20px; /* Add space between images */
-    object-fit: cover; /* Ensures images retain their aspect ratio */
+.logo-slider img {
+    width: auto;
+    height: 110px; /* Set a consistent height */
+    margin-right: 20px;
+    object-fit: contain; /* Maintain aspect ratio without stretching */
+    padding: 10px;
+    background-color: #ffffff; /* Optional: gives padding around the SVGs */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-sizing: border-box;
+    margin: 0 40px;
 }
 
-/* Keyframes for sliding animation */
-@keyframes slide {
-    0% {
-        transform: translateX(100%); /* Start from the right */
+@keyframes slider {
+    from{
+        transform: translateX(0);
     }
-    100% {
-        transform: translateX(-100%); /* Move to the left */
+    to{
+        transform: translateX(-100%);
     }
 }
+

@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import "../static/Home.css"
+import About from '../components/About'
 
 function Home() {
   return (
@@ -22,21 +23,29 @@ function Home() {
           </div>
         </div>
 
-        <div class="ad-container">
-            <div class="ad-slider">
-                <img src="src\assets\Logos\Chanel.png" alt="Ad 1" />
-                <img src="src\assets\Logos\JPG_logo.png" alt="Ad 2" />
-                <img src="src\assets\Logos\valentino-logo.png" alt="Ad 3" />
-                <img src="src\assets\Logos\GIORGIO_ARMANI.jpg" alt="Ad 4" />
-                <img src="src\assets\Logos\YSL.jpg" alt="Ad 5" />
-                <img src="src\assets\Logos\valentino-logo.png" alt="Ad 6" />
+        <div class="logos-container">
+            <div class="logo-slider">
+              <img src="src\logos\boss-hugo-boss.svg" alt="" />
+              <img src="src\logos\calvin-klein-1.svg" alt="" />
+              <img src="src\logos\chanel-2.svg" alt="" />
+              <img src="src\logos\dolce-and-gabbana.svg" alt="" />
+              <img src="src\logos\giorgio-armani.svg" alt="" />
+              <img src="src\logos\gucci.svg" alt="" />
+              <img src="src\logos\jean-paul-gaultier.svg" alt="" />
+              <img src="src\logos\versace.svg" alt="" />
+              <img src="src\logos\yves-saint-laurent.svg" alt="" />
+            </div>
 
-                <img src="src\assets\Logos\Chanel.png" alt="Ad 1" />
-                <img src="src\assets\Logos\JPG_logo.png" alt="Ad 2" />
-                <img src="src\assets\Logos\valentino-logo.png" alt="Ad 3" />
-                <img src="src\assets\Logos\GIORGIO_ARMANI.jpg" alt="Ad 4" />
-                <img src="src\assets\Logos\YSL.jpg" alt="Ad 5" />
-                <img src="src\assets\Logos\valentino-logo.png" alt="Ad 6" />
+            <div class="logo-slider">
+              <img src="src\logos\boss-hugo-boss.svg" alt="" />
+              <img src="src\logos\calvin-klein-1.svg" alt="" />
+              <img src="src\logos\chanel-2.svg" alt="" />
+              <img src="src\logos\dolce-and-gabbana.svg" alt="" />
+              <img src="src\logos\giorgio-armani.svg" alt="" />
+              <img src="src\logos\gucci.svg" alt="" />
+              <img src="src\logos\jean-paul-gaultier.svg" alt="" />
+              <img src="src\logos\versace.svg" alt="" />
+              <img src="src\logos\yves-saint-laurent.svg" alt="" />
             </div>
         </div> 
 
@@ -156,6 +165,8 @@ function Home() {
             </div>
           </div>
       </div>
+
+      <About></About>
     </>
   )
 }
