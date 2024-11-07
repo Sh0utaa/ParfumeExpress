@@ -84,6 +84,14 @@ function Home() {
                     <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8d420031447fa12e/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
                     <p>$299.00</p>
                   </div>
+
+                  <div className="product">
+                    <h4>STRONGER WITH YOU</h4>
+                    <p>50ml</p>
+                    <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8d420031447fa12e/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+                    <p>$299.00</p>
+                  </div>
+                  
                 </div>
               </div>
 
@@ -118,6 +126,13 @@ function Home() {
                     <h4>VALENTINO BORN IN ROMA</h4>
                     <p>50ml</p>
                     <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8c03001bcc86a98f/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+                    <p>$299.00</p>
+                  </div>
+
+                  <div className="product">
+                    <h4>STRONGER WITH YOU</h4>
+                    <p>50ml</p>
+                    <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8d420031447fa12e/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
                     <p>$299.00</p>
                   </div>
                 </div>
@@ -158,6 +173,14 @@ function Home() {
                     <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8c03001bcc86a98f/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
                     <p>$299.00</p>
                   </div>
+
+                  <div className="product">
+                    <h4>STRONGER WITH YOU</h4>
+                    <p>50ml</p>
+                    <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8d420031447fa12e/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+                    <p>$299.00</p>
+                  </div>
+                  
                 </div>
               </div>
 
