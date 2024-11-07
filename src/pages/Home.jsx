@@ -22,13 +22,23 @@ function Home() {
           </div>
         </div>
 
-        {/* <div class="ad-container">
+        <div class="ad-container">
             <div class="ad-slider">
                 <img src="src\assets\Logos\Chanel.png" alt="Ad 1" />
                 <img src="src\assets\Logos\JPG_logo.png" alt="Ad 2" />
                 <img src="src\assets\Logos\valentino-logo.png" alt="Ad 3" />
+                <img src="src\assets\Logos\GIORGIO_ARMANI.jpg" alt="Ad 4" />
+                <img src="src\assets\Logos\YSL.jpg" alt="Ad 5" />
+                <img src="src\assets\Logos\valentino-logo.png" alt="Ad 6" />
+
+                <img src="src\assets\Logos\Chanel.png" alt="Ad 1" />
+                <img src="src\assets\Logos\JPG_logo.png" alt="Ad 2" />
+                <img src="src\assets\Logos\valentino-logo.png" alt="Ad 3" />
+                <img src="src\assets\Logos\GIORGIO_ARMANI.jpg" alt="Ad 4" />
+                <img src="src\assets\Logos\YSL.jpg" alt="Ad 5" />
+                <img src="src\assets\Logos\valentino-logo.png" alt="Ad 6" />
             </div>
-        </div> */}
+        </div> 
 
 
           <div className="products-container">
