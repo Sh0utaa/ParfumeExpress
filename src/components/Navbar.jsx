@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import '../static/Navbar.css';
+import { useAuth } from '../utils/AuthContext'
 
 function Navbar() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const { user } = useAuth();
+
+  console.log("user value:", user);
 
   const showSidebar = () => {
     setIsSidebarVisible(true);
@@ -177,9 +182,13 @@ function Navbar() {
       <li className='hideOnMobile'><a href="/">
         CART
       </a></li>
-      <li className='hideOnMobile'><a href="/login">
-        ACCOUNT
-        </a></li>
+      <li className='hideOnMobile'>
+      <a href={user ? "/account" : "/login"}>
+        {user ? "ACCOUNT" : "SIGN IN"}
+      </a>
+    </li>
+
+
 
                 {/* BURGER MENU */}
     <li className='showOnMobile' onClick={showSidebar}>

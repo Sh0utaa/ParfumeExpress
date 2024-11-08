@@ -7,6 +7,8 @@ function Login() {
     const navigate = useNavigate() 
     const {user, loginUser} = useAuth()
 
+    console.log(user)
+
     const loginForm = useRef(null)
     useEffect(() => {
       if(user){
