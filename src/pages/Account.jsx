@@ -43,6 +43,15 @@ function Account() {
                 <button>Change Password</button>                
             </div>
 
+            {/* CHANGE PASSWORD */}
+            <div className="profile-division">
+                <h2>LOG OUT</h2>
+            </div>
+            <div className="authentication-container">
+                <p>Log out of your account</p>
+                <button>Log Out</button>                
+            </div>
+
 
             {/* DELETE ACCOUNT */}
             <div className="profile-division">
