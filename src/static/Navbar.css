@@ -116,7 +116,7 @@ nav a:hover {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .hideOnMobile {
         display: none;
     }
