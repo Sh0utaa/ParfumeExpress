@@ -133,3 +133,18 @@
     }
 }
 
+@media (max-width: 900px) {
+    .logo-slider img {
+        height: 90px;
+        margin-right: 10px;
+    }
+    .products-container {
+        height: 2000px;
+    }
+}
+
+@media (max-width: 700px) {
+    .logo-slider img {
+        margin-right: 5px;
+    }
+}

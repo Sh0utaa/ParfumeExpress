@@ -1,8 +1,11 @@
 import React from 'react'
 import '../static/Account.css'
+import { useAuth } from '../utils/AuthContext'
 
 function Account() {
-  return (
+    const { user, logoutUser } = useAuth()
+
+    return (
     <>
         <div className="account-container">
             <div className="profile-division">
@@ -49,7 +52,7 @@ function Account() {
             </div>
             <div className="authentication-container">
                 <p>Log out of your account</p>
-                <button>Log Out</button>                
+                <button onClick={logoutUser}>Log Out</button>
             </div>
 
 
