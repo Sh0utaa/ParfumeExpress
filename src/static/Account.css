@@ -1,0 +1,105 @@
+.account-container{
+    margin: auto;
+    width: 90%;
+    height: 1000px;
+    margin-top: 20px;
+}
+.profile-division {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.public-profile h2 {
+    font-weight: 400;
+}
+
+.profile-container {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.image-wrapper {
+    width: 40%;
+    height: 100%;
+    display: flex;       /* Center-align the image */
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture-wrapper{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;  /* Makes the container a circle */
+    overflow: hidden;    /* Ensures the image doesn't overflow the container */
+    display: flex;       /* Center-align the image */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddd;  /* Optional: border for a clean look */
+}
+
+.image-wrapper img {
+    width: 100%;         /* Makes the image cover the wrapper */
+    height: 100%;        /* Ensures the image scales proportionally */
+    object-fit: cover;   /* Ensures the image fills the circle without distortion */
+  }
+
+.profile-information {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-information input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.profile-information input:focus {
+    border-color: #555; 
+}
+
+.profile-information button {
+    width: 130px;
+    height: 40px;
+    border-radius: 0px 20px 0px 20px;
+    border: none;
+    background-color: #2d3142;
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.profile-information button:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+
+
+.authentication-container button{
+    width: 130px;
+    height: 40px;
+    border-radius: 0px 20px 0px 20px;
+    border: none;
+    background-color: #2d3142;
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.authentication-container button:hover{
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}

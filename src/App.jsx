@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Register from './pages/Register'
 import { AuthProvider } from './utils/AuthContext';
+import Account from './pages/Account'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <Route path="/home" element={<Home />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/register" element={<Register />}></Route>
+            <Route path='/account' element={<Account />}></Route>
 
 
           </Routes>

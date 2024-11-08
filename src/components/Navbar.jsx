@@ -8,8 +8,6 @@ function Navbar() {
 
   const { user } = useAuth();
 
-  console.log("user value:", user);
-
   const showSidebar = () => {
     setIsSidebarVisible(true);
   };
