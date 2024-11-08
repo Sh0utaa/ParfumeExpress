@@ -25,7 +25,6 @@ function Account() {
             </div>
 
 
-            {/* VERIFY ACCOUNT */}
             <div className="profile-division">
                 <h2>VERIFY ACCOUNT</h2>
             </div>
