@@ -1,62 +1,94 @@
+/* General Image Container */
+.image-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 300px; /* Restrict maximum size */
+    aspect-ratio: 1 / 1.3; /* Maintain consistent aspect ratio */
+    object-fit: cover; /* Ensure no distortion */
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Smooth hover animation */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Carousel Container */
 .carousel-container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .carousel-container img {
-    width: 500px;
-    height: 500px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.slide {
+    min-width: 100%; /* Each image takes full width of container */
+}
+
+.carousel-container img {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1.3;
     object-fit: cover;
     border-radius: 5px;
     transition: transform 0.3s ease;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .carousel-button {
+}
+
+/* Carousel Button Styling */
+.carousel-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 50%;
-    color: black;
+    color: white;
     font-size: 2rem;
     padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .carousel-button:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .carousel-button.left {
+    z-index: 1;
+    background: none;
+    border: none;
+}
+
+.carousel-button.left {
     left: 10px;
-  }
-  
-  .carousel-button.right {
+}
+
+.carousel-button.right {
     right: 10px;
-  }
-  
-  .image-wrapper {
+}
+
+/* Responsive Design */
+.image-wrapper {
     display: none;
-  }
-  
-  @media (max-width: 1000px) {
+}
+
+@media (max-width: 1000px) {
     .image-container {
-      display: none;
+        display: none;
     }
     
     .carousel-container {
-      display: flex;
+        display: flex;
     }
-  }
-  
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../static/ImageContainer.css";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs';
 
@@ -19,23 +19,31 @@ function ImageContainer() {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
+  // Auto-scroll logic
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, [currentIndex]);
+
   return (
     <>
-      <div className="image-container">
-        {images.map((image, index) => (
-          <div className="image-wrapper" key={index}>
-            <img src={image} alt={`modelPicture${index}`} />
-          </div>
-        ))}
-      </div>
-
       <div className="carousel-container">
         <button className="carousel-button left" onClick={handlePrev}>
           <BsArrowLeftCircleFill />
         </button>
         <div className="carousel">
-          <div className="slide">
-            <img src={images[currentIndex]} alt={`modelPicture${currentIndex}`} />
+          <div 
+            className="slide-track" 
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          >
+            {images.map((image, index) => (
+              <div className="slide" key={index}>
+                <img src={image} alt={`modelPicture${index}`} />
+              </div>
+            ))}
           </div>
         </div>
         <button className="carousel-button right" onClick={handleNext}>
