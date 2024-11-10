@@ -1,7 +1,6 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import "../static/Home.css"
-import About from '../components/About'
+import Contact from '../components/Contact'
 import { useAuth } from '../utils/AuthContext'
 import ImageContainer from '../components/ImageContainer'
 import LogoSlider from '../components/LogoSlider'
@@ -163,6 +162,7 @@ function Home() {
           </div>
       </div>
 
+      <Contact></Contact>
     </>
   )
 }

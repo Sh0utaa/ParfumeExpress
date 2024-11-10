@@ -37,7 +37,7 @@ function Register() {
   return (
     <div className="authentication">
     <form ref={registerForm} onSubmit={handleSubmit}>
-        <h1>REGISTER</h1>
+        <h1>SIGN UP</h1>
         <input autoComplete='off' type="text" required name='name' placeholder='Username' />
         <input autoComplete='off' type="email" required name='email' placeholder='Email' />
         <input autoComplete='off'type="password" required name='password1' placeholder='Password' />
