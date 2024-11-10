@@ -92,10 +92,15 @@
     transition-duration: 0.3s;
 }
 
-.Advertisemenet {
+.Advertisement {
     width: 100%;
     height: 150px;
-    border: 1px black solid;
+}
+
+.Advertisement img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 

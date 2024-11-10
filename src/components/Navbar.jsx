@@ -39,12 +39,10 @@ function Navbar() {
     <nav>
     {/* Sidebar */}
     <ul className={`nav-sidebar ${isSidebarVisible ? 'visible' : ''}`} id='nav-sidebar'>
-      <li>
-        <a href="/" onClick={closeSidebar}>
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
-            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-          </svg>
-        </a>
+      <li onClick={closeSidebar} className='sidebar-close-button'>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+        </svg>
       </li>
 
       <li><a href="/">
@@ -62,9 +60,11 @@ function Navbar() {
         <li><a href="/">
         CART
         </a></li>
-        <li><a href="/login">
-        ACCOUNT
-        </a></li>
+        <li>
+        <a href={user ? "/account" : "/login"}>
+        {user ? "ACCOUNT" : "SIGN IN"}
+       </a>
+        </li>
     </ul>
 
     <ul className={`${isScrolled ? 'scrolled' : ''}`}>
@@ -189,12 +189,10 @@ function Navbar() {
 
 
                 {/* BURGER MENU */}
-    <li className='showOnMobile' onClick={showSidebar}>
-        <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
-            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-          </svg>
-        </a>
+    <li className='hamburger-menu' onClick={showSidebar}>
+        <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+        </svg>
       </li>
       
       

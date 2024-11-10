@@ -115,12 +115,35 @@ nav a:hover {
     text-decoration: none;
 }
 
+.sidebar-close-button {
+    display: none;
+    align-items: center;
+}
+.sidebar-close-button svg {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.hamburger-menu {
+    display: none;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 900px) {
     .hideOnMobile {
         display: none;
     }
+    
+    .hamburger-menu {
+        display: flex;
+    }
 
+    .sidebar-close-button {
+        display: flex;
+    }
     .showOnMobile {
         display: block;
     }

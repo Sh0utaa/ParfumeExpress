@@ -54,7 +54,6 @@
     object-fit: cover;
     border-radius: 5px;
     transition: transform 0.3s ease;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Carousel Button Styling */

@@ -63,7 +63,9 @@ function Home() {
                 </div>
               </div>
 
-              <div className="Advertisemenet">REKLAMA 1</div>
+              <div className="Advertisement">
+                <img src="src\advertisements\Advertisement1.jpg" alt="" />
+              </div>
 
 
               <div className="recently-added">
@@ -107,7 +109,9 @@ function Home() {
               </div>
 
 
-            <div className="Advertisemenet">REKLAMA 2</div>
+            <div className="Advertisement">
+              <img src="src\advertisements\Advertisement1.jpg" alt="" />
+            </div>
 
 
 
@@ -152,12 +156,13 @@ function Home() {
                 </div>
               </div>
 
-            <div className="Advertisemenet">REKLAMA 3</div>
+            <div className="Advertisement">
+              <img src="src\advertisements\Advertisement1.jpg" alt="" />
+            </div>
             </div>
           </div>
       </div>
 
-      <About></About>
     </>
   )
 }
