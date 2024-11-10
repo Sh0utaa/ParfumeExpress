@@ -30,6 +30,16 @@ function ImageContainer() {
 
   return (
     <>
+      {/* Regular Image Container for larger screens */}
+      <div className="image-container">
+        {images.map((image, index) => (
+          <div className="image-wrapper" key={index}>
+            <img src={image} alt={`modelPicture${index}`} />
+          </div>
+        ))}
+      </div>
+
+      {/* Carousel Container for smaller screens */}
       <div className="carousel-container">
         <button className="carousel-button left" onClick={handlePrev}>
           <BsArrowLeftCircleFill />
