@@ -29,7 +29,6 @@ function Contact() {
 
             <div className="info-container">
                 <div className="info">
-                    <h3>FIND US AT</h3>
                     <ul>
                     <li>
                         <a href="/">
@@ -45,12 +44,14 @@ function Contact() {
 
                     </ul>
                 </div>
+
+                <div className="shota-tevdorashvili">
+                    <p>Like what you see? This website was made by <strong>Shota Tevdorashvili</strong></p>
+                    <p>Contact me at shotatevdorashvilibusiness@gmail.com</p>
+                </div>
             </div>
 
-            <div className="shota-tevdorashvili">
-                <p>Like what you see? This website was made by <strong>Shota Tevdorashvili</strong></p>
-                <p>Contact me at shotatevdorashvilibusiness@gmail.com</p>
-            </div>
+
 
 
         </div>
