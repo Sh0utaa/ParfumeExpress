@@ -7,6 +7,7 @@ import Register from './pages/Register'
 import { AuthProvider } from './utils/AuthContext';
 import Account from './pages/Account'
 import ProtectedRoutes from './utils/ProtectedRoutes'
+import Cart from './pages/Cart'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
             <Route path="/register" element={<Register />}></Route>
 
             <Route element={<ProtectedRoutes/>}>
+              <Route path='/cart' element={<Cart />}></Route>
               <Route path='/account' element={<Account />}></Route>
             </Route>
 

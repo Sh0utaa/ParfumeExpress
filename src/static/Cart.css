@@ -1,0 +1,149 @@
+.cart-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(192, 13%, 92%);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.item-container {
+    width: 60%;
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.title {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.title h1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.items {
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    gap: 15px;
+}
+
+.item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.item-details h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.item-details .description {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.quantity-control button {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quantity-control span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.subtotal {
+    margin-top: 30px;
+    width: 25%;
+    height: 125px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subtotal h3 {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.subtotal button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subtotal button:hover {
+    background-color: #555;
+}
+
+/* Mobile Responsive */
+@media (max-width: 800px) {
+    .cart-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-container, .subtotal {
+        width: 90%;
+    }
+
+    .title h1 {
+        font-size: 1.5rem;
+    }
+
+    .item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .item-details h2 {
+        font-size: 1rem;
+    }
+}
