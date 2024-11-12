@@ -90,3 +90,39 @@
         width: 100%;
     }
 }
+
+
+
+/* Input Container Styling */
+.input-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-container input {
+    width: 95%;
+    padding-right: 2.5rem; /* Adds space for the icon */
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Icon Styling */
+.toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Adjust focus color for the input */
+.input-container input:focus {
+    border-color: #555;
+}
