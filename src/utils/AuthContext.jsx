@@ -15,16 +15,21 @@ export const AuthProvider = ({ children }) => {
   const loginUser = async (userInfo) => {
     setLoading(true);
     try {
-      let response = await account.createEmailPasswordSession(
-        userInfo.email,
-        userInfo.password
-      );
-      setUser(response); // Set user object on login
+        let response = await account.createEmailPasswordSession(
+            userInfo.email,
+            userInfo.password
+        );
+
+        setUser(response); // Set user object on login
+        return response;
     } catch (error) {
-      console.error("loginUser error: ", error);
+        console.error("loginUser error:", error);
+        return { error: error.message };
+    } finally {
+        setLoading(false); // Ensures loading state is reset after the operation
     }
-    setLoading(false);
-  };
+};
+
 
   const logoutUser = async () => {
     await account.deleteSession("current");

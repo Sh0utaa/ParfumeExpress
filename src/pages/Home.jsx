@@ -38,7 +38,7 @@ function Home() {
 
                 <div className="products">
                   
-                  <div className="product" onClick={handlePostClick}>
+                  <div className="product">
                     <h4>SPICEBOMB EXTREME</h4>
                     <p>50ml</p>
                     <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8d76003029feec33/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
@@ -59,7 +59,7 @@ function Home() {
                     <p>$299.00</p>
                   </div>
 
-                  <div className="product">
+                  <div className="product" onClick={handlePostClick}>
                     <h4>STRONGER WITH YOU</h4>
                     <p>50ml</p>
                     <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8d420031447fa12e/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />

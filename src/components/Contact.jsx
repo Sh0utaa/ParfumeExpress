@@ -44,11 +44,11 @@ function Contact() {
 
                     </ul>
                 </div>
-
+{/* 
                 <div className="shota-tevdorashvili">
                     <p>Like what you see? This website was made by <strong>Shota Tevdorashvili</strong></p>
                     <p>Contact me at shotatevdorashvilibusiness@gmail.com</p>
-                </div>
+                </div> */}
             </div>
 
 
