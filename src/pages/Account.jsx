@@ -14,7 +14,7 @@ function Account() {
             <div className="profile-container">
                 <div className="image-wrapper">
                     <div className="profile-picture-wrapper">
-                        <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8c03001bcc86a98f/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="Profile Picture" />
+                        <img src="src\assets\DefaultProfilePicture.png" alt="Default Profile Picture" />
                     </div>
                 </div>
                 <div className='profile-information'>

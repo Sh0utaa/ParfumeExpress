@@ -4,9 +4,16 @@ import Contact from '../components/Contact'
 import { useAuth } from '../utils/AuthContext'
 import ImageContainer from '../components/ImageContainer'
 import LogoSlider from '../components/LogoSlider'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 function Home() {
+  const navigate = useNavigate();
   const {user} = useAuth()
+
+
+  const handlePostClick = () => {
+    navigate(`/product`)
+  }
 
   return (
     <>
@@ -31,7 +38,7 @@ function Home() {
 
                 <div className="products">
                   
-                  <div className="product">
+                  <div className="product" onClick={handlePostClick}>
                     <h4>SPICEBOMB EXTREME</h4>
                     <p>50ml</p>
                     <img src="https://cloud.appwrite.io/v1/storage/buckets/671d56dc003e66f31f4d/files/671f8d76003029feec33/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />

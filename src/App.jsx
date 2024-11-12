@@ -9,6 +9,7 @@ import Account from './pages/Account'
 import ProtectedRoutes from './utils/ProtectedRoutes'
 import Cart from './pages/Cart'
 import About from './pages/About'
+import Product from './pages/Product'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/login" element={<Login />}></Route>
             <Route path="/register" element={<Register />}></Route>
             <Route path="/about" element={<About />}></Route>
+            <Route path="/product" element={<Product />}></Route>
 
             <Route element={<ProtectedRoutes/>}>
               <Route path='/cart' element={<Cart />}></Route>
