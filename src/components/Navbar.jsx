@@ -48,14 +48,14 @@ function Navbar() {
       <li><a href="/">
         HOME
         </a></li>
-      <li><a href="/">
+      <li><a href="/about">
         ABOUT
           </a></li>
       <li><a href="/">
-        SUPPORT
+        FILTER
         </a></li>
       <li><a href="/">
-        FILTER
+        SOCIALS
         </a></li>
         <li><a href="/cart">
         CART
@@ -74,11 +74,11 @@ function Navbar() {
     <li className='hideOnMobile'><a href="/">
         HOME
         </a></li>
-      <li className='hideOnMobile'><a href="/">
+      <li className='hideOnMobile'><a href="/about">
         ABOUT
         </a></li>
       <li className='hideOnMobile'><a href="/">
-        SUPPORT
+          FILTER
         </a></li>
 
     {/* PARFUMEEXPRESS LOGO */}
@@ -175,7 +175,7 @@ function Navbar() {
         </a></li>
 
       <li className='hideOnMobile'><a href="/">
-        FILTER
+        SOCIALS
       </a></li>
       <li className='hideOnMobile'><a href="/cart">
         CART

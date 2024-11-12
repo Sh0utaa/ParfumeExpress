@@ -8,6 +8,7 @@ import { AuthProvider } from './utils/AuthContext';
 import Account from './pages/Account'
 import ProtectedRoutes from './utils/ProtectedRoutes'
 import Cart from './pages/Cart'
+import About from './pages/About'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="/home" element={<Home />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/register" element={<Register />}></Route>
+            <Route path="/about" element={<About />}></Route>
 
             <Route element={<ProtectedRoutes/>}>
               <Route path='/cart' element={<Cart />}></Route>
