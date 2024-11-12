@@ -13,7 +13,6 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const loginUser = async (userInfo) => {
-    setLoading(true);
     try {
         let response = await account.createEmailPasswordSession(
             userInfo.email,
@@ -23,10 +22,8 @@ export const AuthProvider = ({ children }) => {
         setUser(response); // Set user object on login
         return response;
     } catch (error) {
-        console.error("loginUser error:", error);
-        return { error: error.message };
-    } finally {
-        setLoading(false); // Ensures loading state is reset after the operation
+        // console.error("loginUser error:", error);
+        return error;
     }
 };
 
@@ -37,24 +34,24 @@ export const AuthProvider = ({ children }) => {
   };
 
   const registerUser = async (userInfo) => {
-    setLoading(true);
     try {
       let response = await account.create(
         ID.unique(),
         userInfo.email,
-        userInfo.password1,
+        userInfo.password,
         userInfo.name
       );
 
       await account.createEmailPasswordSession(
         userInfo.email,
-        userInfo.password1
+        userInfo.password
       );
-      setUser(response); // Set user object after successful registration
+      setUser(response);
+      return response;
     } catch (error) {
-      console.error("registerUser error: ", error);
+      // console.error("registerUser error: ", error);
+      return error;
     }
-    setLoading(false);
   };
 
   const verifyUser = async () => {
