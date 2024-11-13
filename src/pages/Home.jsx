@@ -33,8 +33,9 @@ function Home() {
                     <h3>BEST SELLERS</h3>
                     <p>The Best Selling Parfumes</p>
                   </div>
-                  <button>See All ></button>
-                </div>
+                  <a href="/filter">
+                    <button>See All ></button>
+                  </a>                </div>
 
                 <div className="products">
                   
@@ -80,7 +81,9 @@ function Home() {
                     <h3>JUST ARRIVED</h3>
                     <p>Recently added Parfumes</p>
                   </div>
-                  <button>See All ></button>
+                  <a href="/filter">
+                    <button>See All ></button>
+                  </a>
                 </div>
 
                 <div className="products">
@@ -127,8 +130,9 @@ function Home() {
                     <h3>OTHER PRODUCTS</h3>
                     <p>Check out our Other Products</p>
                   </div>
-                  <button>See All ></button>
-                </div>
+                  <a href="/filter">
+                    <button>See All ></button>
+                  </a>                </div>
 
                 <div className="products">
                   <div className="product">

@@ -1,6 +1,6 @@
 /* Container Styles */
 .content-container {
-    height: 100vh;
+    height: auto;
     width: 95%;
     margin: auto;
     display: flex;
@@ -21,7 +21,6 @@
 
 .filter-price {
     padding-bottom: 20px;
-    border-bottom: 1px solid black;
 }
 
 .filter-price h4, .filter-gender h4, .filter-brand h4 {
@@ -42,7 +41,7 @@
 }
 
 .price-input .field {
-    height: 45px;
+    height: 40px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -66,12 +65,50 @@ input[type="number"]::-webkit-inner-spin-button{
 }
 
 .price-input .seperator {
-    backgournd: red;
     width: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 15px;
+}
+
+.slider {
+    height: 5px;
+    border-radius: 5px;
+    background: #ddd;
+    position: relative;
+}
+
+.slider .progress {
+    height: 5px;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+.range-input{
+    position: relative;
+}
+
+.range-input input {
+    position: absolute;
+    top: -5px;
+    height: 5px;
+    width: 100%;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;    
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    background: #333;
 }
 
 /* Filter Dropdowns */
@@ -96,5 +133,7 @@ input[type="number"]::-webkit-inner-spin-button{
     padding: 20px;
     background-color: #ffffff;
 }
+
+/* Products Container */
 
 
