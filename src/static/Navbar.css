@@ -48,9 +48,25 @@ nav a {
     color: black;
 }
 
+nav p {
+    height: 100%;
+    font-weight: 200;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
 nav a:hover {
     background-color: #f0f0f033;
     border-bottom: 1px solid black;
+}
+
+nav p:hover {
+    background-color: #f0f0f033;
+    border-bottom: 1px solid black;
+    cursor: pointer;
 }
 
 /* Sidebar Styling */
@@ -152,3 +168,48 @@ nav a:hover {
         justify-content: space-between;
     }
 }
+
+
+
+/* Styles for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Hide the dropdown menu by default */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the 'SOCIALS' link */
+    left: 0;
+    background-color: #fff;
+    min-width: 120px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  /* Display dropdown menu on hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Styling individual dropdown items */
+  .dropdown-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+  }
+  
+  .dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #f5f5f5;
+  }
+  

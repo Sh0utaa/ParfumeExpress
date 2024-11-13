@@ -36,7 +36,7 @@ function Register() {
       if (response instanceof AppwriteException) {
         setErrorMessage(response.message)
       } else {
-        navigate('/account') // Redirect on successful registration
+        navigate('/') // Redirect on successful registration
       }
     } catch (error) {
       setErrorMessage("An error occurred during registration. Please try again.")

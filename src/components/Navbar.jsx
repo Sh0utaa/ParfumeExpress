@@ -54,9 +54,6 @@ function Navbar() {
       <li><a href="/">
         FILTER
         </a></li>
-      <li><a href="/">
-        SOCIALS
-        </a></li>
         <li><a href="/cart">
         CART
         </a></li>
@@ -174,9 +171,18 @@ function Navbar() {
         
         </a></li>
 
-      <li className='hideOnMobile'><a href="/">
-        SOCIALS
-      </a></li>
+      <div className='hideOnMobile'>
+        <li className='dropdown'>
+          <p>SOCIALS</p>
+          <ul className="dropdown-menu">
+            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://TikTok.com" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </li>
+      </div>
+
+
       <li className='hideOnMobile'><a href="/cart">
         CART
       </a></li>

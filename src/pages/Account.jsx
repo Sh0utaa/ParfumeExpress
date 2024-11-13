@@ -19,9 +19,9 @@ function Account() {
                 </div>
                 <div className='profile-information'>
                     <p>Change Username</p>
-                    <input type="text" autoComplete='off' placeholder='Shota Tevdorashvili'/>
+                    <input type="text" autoComplete='off' placeholder={user.name}/>
                     <p>Change Email</p>
-                    <input type="email" autoComplete='off' placeholder='shotatevdorashvilibusiness@gmail.com'/>
+                    <input type="email" autoComplete='off' placeholder={user.email}/>
                     <button>Update profile</button>
                 </div>
 
