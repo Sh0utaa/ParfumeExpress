@@ -61,3 +61,12 @@ h3 span {
 /* Products Container */
 
 
+@media (max-width: 900px) {
+    .filter-container {
+        display: none;
+    }
+
+    .filter-product-container {
+        width: 100%;
+    }
+}

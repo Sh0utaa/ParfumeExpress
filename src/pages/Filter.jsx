@@ -26,9 +26,9 @@ function Filter() {
               <div className={'values'}>
                 ${values[0]} - ${values[1]}
               </div>
-              <small>Current Range: ${values.join(' - ')}</small>
+              <small>Current Range: $100 - $12000</small>
 
-              <Box sx={{ width: 300 }}>
+              <Box>
                 <Slider
                   value={values}
                   min={MIN}
@@ -37,6 +37,8 @@ function Filter() {
                   valueLabelDisplay="auto"
                 />
               </Box>
+
+
             </div>
           </div>
 

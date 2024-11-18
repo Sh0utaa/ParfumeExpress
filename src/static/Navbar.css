@@ -147,6 +147,11 @@ nav p:hover {
     align-items: center;
 }
 
+.filter-icon {
+    margin: 25px 0px 0px 30px;
+    display: none;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 900px) {
     .hideOnMobile {
@@ -154,6 +159,10 @@ nav p:hover {
     }
     
     .hamburger-menu {
+        display: flex;
+    }
+
+    .filter-icon {
         display: flex;
     }
 
@@ -213,3 +222,4 @@ nav p:hover {
     background-color: #f5f5f5;
   }
   
+
