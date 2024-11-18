@@ -14,14 +14,23 @@
     padding: 20px;
 }
 
-
-h3 span {
-    font-weight: 500;
+.filter-sidebar-styling {
+    padding: 15px;
 }
 
 
 
+/* Product Display Section */
+.filter-product-container {
+    width: 70%;
+    border-left: 1px solid #ddd;
+    padding: 20px;
+    background-color: #ffffff;
+}
 
+h3 span {
+    font-weight: 500;
+}
 
 
 @media (max-width: 900px) {
