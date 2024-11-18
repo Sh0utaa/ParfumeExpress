@@ -1,6 +1,7 @@
 /* Overall Page Container */
 .product-page {
     width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -9,7 +10,6 @@
 /* Container for Image and Details */
 .product-container {
     display: flex;
-    height: 50vh;
     margin-top: 20px;
     width: 100%;
     max-width: 1200px;
@@ -71,7 +71,7 @@
     padding: 10px 20px;
     font-size: 1.2em;
     color: white;
-    background-color: #000;
+    background-color: #333;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -93,5 +93,29 @@
     .product-details {
         max-width: 100%;
     }
+
+    .product-img {
+        max-width: 90%;  /* Make sure the image is responsive */
+        max-height: 90%;  /* Ensure the image does not exceed its container's height */
+        height: auto;  /* Keep the aspect ratio intact */
+        object-fit: contain;  /* Ensure the whole image fits inside the container without cropping */
+        border-radius: 8px;  /* Optional: rounded corners */
+    }
+
+
+    .product-name {
+        font-size: 1.5em;
+    }
+
+    .product-price {
+        font-size: 1.2em;
+    }
+
+    .product-container {
+        display: flex;
+        height: 75vh;
+        width: 100%;
+    }
+    
 }
 
