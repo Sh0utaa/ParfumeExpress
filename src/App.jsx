@@ -11,14 +11,22 @@ import Cart from './pages/Cart'
 import About from './pages/About'
 import Product from './pages/Product'
 import Filter from './pages/FIlter'
+import { useState } from 'react'
 
 function App() {
+
+  const [isFilterbarActive, setFilterbarActive] = useState(false)
+
+  const toggleFilterbar = () => {
+    setFilterbarActive((prev) => !prev);
+    // console.log("Sidebar visibility:", !isFilterbarActive);
+  };
 
   return (
     <>
       <BrowserRouter>
         <AuthProvider>
-        <Navbar />
+        <Navbar toggleFilterbar={toggleFilterbar} />
           <Routes>
             <Route index element={<Home />}></Route>
             <Route path="/home" element={<Home />}></Route>
@@ -26,7 +34,7 @@ function App() {
             <Route path="/register" element={<Register />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/product" element={<Product />}></Route>
-            <Route path="/filter" element={<Filter />}></Route>
+            <Route path="/filter" element={<Filter toggleFilterbar={toggleFilterbar} isFilterbarActive={isFilterbarActive} />}></Route>
 
             <Route element={<ProtectedRoutes/>}>
               <Route path='/cart' element={<Cart />}></Route>

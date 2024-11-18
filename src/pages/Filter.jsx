@@ -6,7 +6,7 @@ import '../static/Filter.css';
 const MIN = 100;
 const MAX = 12000;
 
-function Filter() {
+const Filter = ({ isFilterbarActive, toggleFilterbar }) => {
   const [values, setValues] = useState([MIN, MAX]);
 
   const handleSliderChange = (event, newValue) => {
@@ -15,7 +15,46 @@ function Filter() {
 
   return (
     <>
+
       <div className="content-container">
+      {isFilterbarActive && (
+        <div className={`filter-sidebar ${isFilterbarActive ? "active" : ""}`}>
+          
+
+          <button onClick={toggleFilterbar}>Toggle</button>
+
+          
+          {/* SLIDER */}
+          <div className="box">
+              <h3>
+                Price <span>Range</span>
+              </h3>
+              <div className={'values'}>
+                ${values[0]} - ${values[1]}
+              </div>
+              <small>Current Range: $100 - $12000</small>
+
+              <Box>
+                <Slider
+                  value={values}
+                  min={MIN}
+                  max={MAX}
+                  onChange={handleSliderChange}
+                  valueLabelDisplay="auto"
+                />
+              </Box>
+
+
+            </div>
+
+
+
+            
+          </div>
+      )}
+
+
+
         <div className="filter-container">
           <div className="filter-price">
             {/* SLIDER */}
