@@ -36,6 +36,18 @@ const FilterSlider = () => {
               max={MAX}
               onChange={handleSliderChange}
               valueLabelDisplay="auto"
+              sx={{
+                color: '#333', // Blackish gray color
+                '& .MuiSlider-thumb': {
+                  backgroundColor: '#444', // Thumb (circle) color
+                },
+                '& .MuiSlider-track': {
+                  backgroundColor: '#333', // Filled track color
+                },
+                '& .MuiSlider-rail': {
+                  backgroundColor: '#888', // Unfilled track color
+                },
+              }}
             />
           </Box>
         </div>
