@@ -4,9 +4,9 @@ import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs';
 
 function ImageContainer() {
   const images = [
-    "src/assets/ManModel.png",
-    "src/assets/WomanModel.png",
-    "src/assets/UnisexModel.png"
+    "https://cloud.appwrite.io/v1/storage/buckets/673c8c9c000adf57ba37/files/673c900a0037e5bd2b47/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin",
+    "https://cloud.appwrite.io/v1/storage/buckets/673c8c9c000adf57ba37/files/673c90140024d309eda4/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin",
+    "https://cloud.appwrite.io/v1/storage/buckets/673c8c9c000adf57ba37/files/673c901a00084e40e803/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin"
   ];
   
   const [currentIndex, setCurrentIndex] = useState(0);
