@@ -37,7 +37,7 @@ const Filter = ({ isFilterbarActive, toggleFilterbar }) => {
             {/* Full-Width Header Image */}
             <div className="Advertisement">
               <img
-                src="src/advertisements/Advertisement1.jpg" // Replace with your image URL
+                src="https://cloud.appwrite.io/v1/storage/buckets/673c8c9c000adf57ba37/files/673c92f4003864894c95/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" // Replace with your image URL
                 alt="Promotional Banner"
               />
             </div>

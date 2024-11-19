@@ -71,7 +71,7 @@ function Home() {
               </div>
 
               <div className="Advertisement">
-                <img src="src\advertisements\Advertisement1.jpg" alt="" />
+                <img src="https://cloud.appwrite.io/v1/storage/buckets/673c8c9c000adf57ba37/files/673c92f4003864894c95/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
               </div>
 
 
@@ -119,7 +119,7 @@ function Home() {
 
 
             <div className="Advertisement">
-              <img src="src\advertisements\Advertisement1.jpg" alt="" />
+              <img src="https://cloud.appwrite.io/v1/storage/buckets/673c8c9c000adf57ba37/files/673c92f4003864894c95/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
             </div>
 
 
@@ -167,7 +167,7 @@ function Home() {
               </div>
 
             <div className="Advertisement">
-              <img src="src\advertisements\Advertisement1.jpg" alt="" />
+              <img src="https://cloud.appwrite.io/v1/storage/buckets/673c8c9c000adf57ba37/files/673c92f4003864894c95/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
             </div>
             </div>
           </div>
