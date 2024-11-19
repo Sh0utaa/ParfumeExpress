@@ -1,46 +1,8 @@
-[
-    {
-      "path": "/",
-      "element": "Home",
-      "exact": true
-    },
-    {
-      "path": "/home",
-      "element": "Home"
-    },
-    {
-      "path": "/login",
-      "element": "Login"
-    },
-    {
-      "path": "/register",
-      "element": "Register"
-    },
-    {
-      "path": "/about",
-      "element": "About"
-    },
-    {
-      "path": "/product",
-      "element": "Product"
-    },
-    {
-      "path": "/filter",
-      "element": "Filter",
-      "props": {
-        "toggleFilterbar": "toggleFilterbar",
-        "isFilterbarActive": "isFilterbarActive"
-      }
-    },
-    {
-      "path": "/cart",
-      "element": "Cart",
-      "protected": true
-    },
-    {
-      "path": "/account",
-      "element": "Account",
-      "protected": true
-    }
-  ]
-  
+{
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}
