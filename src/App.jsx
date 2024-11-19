@@ -10,7 +10,7 @@ import ProtectedRoutes from './utils/ProtectedRoutes'
 import Cart from './pages/Cart'
 import About from './pages/About'
 import Product from './pages/Product'
-import Filter from './pages/FIlter'
+import Filter from './pages/Filter'
 import { useState } from 'react'
 
 function App() {
