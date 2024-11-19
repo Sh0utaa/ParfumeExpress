@@ -5,29 +5,29 @@ function LogoSlider() {
     
     <div className="logos-container">
     <div className="logo-slider">
-      <img src="src\svg\armani.svg" alt="" />
-      <img src="src\svg\boss-hugo-boss.svg" alt="" />
-      <img src="src\svg\calvin-klein-1.svg" alt="" />
-      <img src="src\svg\chanel-1.svg" alt="" />
-      <img src="src\svg\dolce-gabbana-1.svg" alt="" />
-      <img src="src\svg\giorgio-armani.svg" alt="" />
-      <img src="src\svg\gucci.svg" alt="" />
-      <img src="src\svg\jean-paul-gaultier.svg" alt="" />
-      <img src="src\svg\versace.svg" alt="" />
-      <img src="src\svg\yves-saint-laurent.svg" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b3b002268d16ae0/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b400016d4d1f8bb/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b460007567084bb/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b4d0006eed4ccfa/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b55003cd07f1768/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b5b001c557f9de1/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b640018c1450a9f/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b69000ccaf1835a/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b6e001bc22112d6/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b730025cdeaaf9f/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
     </div>
 
     <div className="logo-slider">
-      <img src="src\svg\armani.svg" alt="" />
-      <img src="src\svg\boss-hugo-boss.svg" alt="" />
-      <img src="src\svg\calvin-klein-1.svg" alt="" />
-      <img src="src\svg\chanel-1.svg" alt="" />
-      <img src="src\svg\dolce-gabbana-1.svg" alt="" />
-      <img src="src\svg\giorgio-armani.svg" alt="" />
-      <img src="src\svg\gucci.svg" alt="" />
-      <img src="src\svg\jean-paul-gaultier.svg" alt="" />
-      <img src="src\svg\versace.svg" alt="" />
-      <img src="src\svg\yves-saint-laurent.svg" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b3b002268d16ae0/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b400016d4d1f8bb/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b460007567084bb/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b4d0006eed4ccfa/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b55003cd07f1768/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b5b001c557f9de1/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b640018c1450a9f/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b69000ccaf1835a/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b6e001bc22112d6/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/673c9114001a74aba820/files/673c9b730025cdeaaf9f/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin" alt="" />
     </div>
 </div> 
   )
