@@ -61,8 +61,8 @@ function Login() {
                         <img
                             src={
                                 showPassword
-                                    ? 'src/svg/visibility_off_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg'
-                                    : 'src/svg/visibility_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg'
+                                    ? 'https://cloud.appwrite.io/v1/storage/buckets/673dadea002e7690484b/files/673dae4c001a90c4868e/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin'
+                                    : 'https://cloud.appwrite.io/v1/storage/buckets/673dadea002e7690484b/files/673dae460002455b0cf4/view?project=67179e18003ccf5af8e5&project=67179e18003ccf5af8e5&mode=admin'
                             }
                             alt="toggle visibility"
                             className="toggle-icon"
