@@ -5,54 +5,49 @@ function Contact() {
   return (
     <>
         <div className="contact-container">
+
             <div className="contact">
-                <h3>SEND US AN EMAIL!</h3>
-                <form action="">
-                    <input autoComplete='off' type="text" />
-                    <button>SEND</button>
-                </form>
+                <div className="email">
+                    <h3>Send us a message!</h3>
+                    <input type="text" placeholder='Write something' />
+                    <button>SUBMIT</button>
+                </div>
+                <div className="referrals">
+                    <ul>
+                        <li>
+                            hi@gmail.com
+                        </li>
+                        <li>example@gmail.com</li>
+                        <li>+995 999 999 999</li>
+                    </ul>
+
+                    <h3>Like what you see? This website was made by <a href="/">ShotaTevdorashvili</a>!</h3>
+                </div>
+            </div>
+
+            <div className="socials-logos-container">
                 <ul>
                     <li>
-                        <p>
-                            example@gmail.com
-                        </p>
+                        FACEBOOK
                     </li>
-
                     <li>
-                        <p>
-                            call us:
-                            +995 999 999 999
-                        </p>
+                        FACEBOOK
+                    </li>
+                    <li>
+                        FACEBOOK
+                    </li>
+                    <li>
+                        FACEBOOK
+                    </li>
+                    <li>
+                        FACEBOOK
+                    </li>
+                    <li>
+                        FACEBOOK
                     </li>
                 </ul>
             </div>
-
-            <div className="info-container">
-                <div className="info">
-                    <ul>
-                    <li>
-                        <a href="/">
-                        FACEBOOK
-                        </a>
-                    </li>
-                    <li><a href="/">
-                        TIKTOK
-                        </a></li>
-                    <li><a href="/">
-                        INSTAGRAM
-                        </a></li>
-
-                    </ul>
-                </div>
-{/* 
-                <div className="shota-tevdorashvili">
-                    <p>Like what you see? This website was made by <strong>Shota Tevdorashvili</strong></p>
-                    <p>Contact me at shotatevdorashvilibusiness@gmail.com</p>
-                </div> */}
-            </div>
-
-
-
+            
 
         </div>
     </>

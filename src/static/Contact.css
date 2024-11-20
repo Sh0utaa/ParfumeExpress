@@ -1,148 +1,110 @@
 .contact-container {
     width: 100%;
-    height: 50vh;
+    height: 75vh;
     display: flex;
-    background-color: rgb(45, 49, 66);
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    background-color: rgb(45, 49, 66);
+
     padding: 20px;
     color: white;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
-.contact-container button {
+.about-us {
     width: 50%;
-    padding: 10px;
-    background-color: white;
-    border: none;
-    border-radius: 0px 20px 0px 20px;
-    cursor: pointer;
-}
-
-.contact-container button:hover {
-    transform: scale(1.05);
-    transition-duration: 0.5s;
-}
-
-.contact-container h3 {
-    margin-bottom: 15px;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    color: white;
-    text-align: left;
-}
-
-.contact-container li {
-    list-style: none;
-    margin-bottom: 10px;
+    height: 100%;
 }
 
 .contact {
-    width: 45%;
-    padding: 10px;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
 }
 
-.contact form {
-    margin: 15px 0;
-    display: flex;
-    flex-direction: column;
+.contact-container li {
+    list-style-type: none;
 }
 
-.contact input[type="text"] {
-    width: 100%;
-    max-width: 350px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    background-color: rgb(35, 39, 55);
-    color: white;
-    font-size: 1rem;
-}
-
-.contact input[type="text"]::placeholder {
-    color: #999;
-}
-
-.contact input[type="text"]:focus {
-    outline: none;
-    border-color: white;
-}
-
-.shota-tevdorashvili {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.9rem;
-    margin-top: 20px;
-}
-
-.shota-tevdorashvili p {
-    line-height: 1.5;
-    color: #dcdcdc;
-}
-
-.shota-tevdorashvili strong {
-    color: white;
-}
-
-.info-container {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
-
-.info {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.info ul {
-    display: flex;
-    gap: 15px;
-    padding: 0;
-}
-
-.info ul li {
-    margin: 0;
-}
-
-.info ul li a {
-    color: #dcdcdc;
+.about-us li a {
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.info ul li a:hover {
     color: white;
-    text-decoration: underline;
+    font-weight: bold;
 }
 
-/* Mobile Responsive */
-@media (max-width: 800px) {
-    .contact-container {
-        flex-direction: column; /* Stack left and right sections */
-        padding: 20px;
-        height: 100vh;
-    }
+.about-us li a:hover {
+    color: rgb(220, 220, 220);
+}
 
-    .contact, .info-container {
-        width: 100%; /* Full width for stacked layout */
-        margin-bottom: 20px;
-    }
+.about-us li {
+    padding: 20px;
+    font-size: 20px;
+}
 
-    .info-container {
-        align-items: flex-start; /* Align content to the left on mobile */
-    }
 
-    .shota-tevdorashvili {
-        margin-top: 10px;
-        text-align: center; /* Center-align the signature text on mobile */
-    }
+
+.email {
+    padding-top: 20px;
+    width: 75%;
+}
+
+.email h3 {
+    font-size: 25px;
+}
+
+.email input {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: medium;
+}
+.email input:focus{
+    outline: none;
+}
+
+.email button {
+    margin-top: 25px;
+    padding: 10px 20px 10px 20px; 
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgb(45, 49, 66);
+    outline: none;
+    border-radius: 15px 0px 15px 0px;
+}
+
+.email button:hover {
+    background-color: rgb(45, 49, 66);
+    color: white;
+    border: 1px solid white;
+    transition-duration: 0.3s;
+    transform: scale(1.05);
+}
+
+.referrals {
+    margin-top: 25px;
+}
+
+.referrals li {
+    margin: 5px 0px 5px 0px;
+}
+
+.referrals h3 {
+    margin-top: 25px;
+}
+
+.referrals a {
+    color: white;
+}
+
+.referrals a:hover {
+    color: rgb(220, 220, 220);
+}
+
+
+@media (max-width: 900px) {
+    
 }
