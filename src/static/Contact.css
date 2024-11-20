@@ -143,6 +143,10 @@
         height: 50px;
         width: 100%;
     }
+    
+    .email input {
+        width: 100%;
+    }
 
     .contact {
         width: 100%;
