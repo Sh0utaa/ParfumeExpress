@@ -1,15 +1,18 @@
 import React from 'react'
 import "../static/Home.css"
 import Contact from '../components/Contact'
-import { useAuth } from '../utils/AuthContext'
 import ImageContainer from '../components/ImageContainer'
 import LogoSlider from '../components/LogoSlider'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { useInView } from "react-intersection-observer";
 
 function Home() {
   const navigate = useNavigate();
-  const {user} = useAuth()
 
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Only trigger once when it comes into view
+    threshold: 0.05, // Adjust this to trigger when 20% of the element is visible
+  });
 
   const handlePostClick = () => {
     navigate(`/product`)
@@ -26,7 +29,10 @@ function Home() {
 
           <div className="products-container">
           
-            <div className='products-wrapper'>
+            <div className={`products-wrapper ${inView ? "fade-up" : "hidden"}`}
+            ref={ref}
+            >
+
               <div className="best-selling">
                 <div className="product-category">
                   <div>
@@ -35,7 +41,8 @@ function Home() {
                   </div>
                   <a href="/filter">
                     <button>See All ></button>
-                  </a>                </div>
+                  </a>                
+                  </div>
 
                 <div className="products">
                   

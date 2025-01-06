@@ -18,6 +18,20 @@
 
 .products-wrapper {
     width: 100%;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.products-wrapper.fade-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+.products-wrapper.hidden {
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 .product-category {
@@ -110,11 +124,16 @@
     overflow: hidden;
     padding-top: 50px;
     white-space: nowrap;
+    /* Pause the animation when hovering */
+    animation-play-state: running;
 }
+
 /* The inner slider that will animate */
 .logo-slider {
     display: inline-block;
     animation: 20s slider infinite linear;
+    /* Allow pausing animation on hover */
+    animation-play-state: running;
 }
 
 /* Style individual images */
@@ -130,14 +149,21 @@
     margin: 0 70px;
 }
 
+/* Pause animation on hover */
+.logos-container:hover .logo-slider {
+    animation-play-state: paused;
+}
+
+/* Keyframes for sliding */
 @keyframes slider {
-    from{
+    from {
         transform: translateX(0);
     }
-    to{
+    to {
         transform: translateX(-100%);
     }
 }
+
 
 /* Responsive layout adjustments */
 @media (max-width: 1000px) {
